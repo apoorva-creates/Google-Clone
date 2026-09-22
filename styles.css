@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #202124;
+}
+
+/* Top-right nav link, shared across all three pages */
+.top-nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 24px;
+}
+
+.top-nav a {
+  color: #202124;
+  text-decoration: none;
+  font-size: 13px;
+  padding: 8px 12px;
+}
+
+.top-nav a:hover {
+  text-decoration: underline;
+}
+
+/* Centered page content, used for Search and Image Search */
+.center-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8vh;
+}
+
+.logo {
+  font-size: 90px;
+  font-weight: 500;
+  margin-bottom: 25px;
+  letter-spacing: -2px;
+}
+
+.logo .blue { color: #4285F4; }
+.logo .red { color: #EA4335; }
+.logo .yellow { color: #FBBC05; }
+.logo .green { color: #34A853; }
+
+.search-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-bar {
+  width: 560px;
+  max-width: 90vw;
+  height: 44px;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+  padding: 0 20px;
+  font-size: 16px;
+  outline: none;
+  box-shadow: none;
+}
+
+.search-bar:hover,
+.search-bar:focus {
+  box-shadow: 0 1px 6px rgba(32,33,36,0.28);
+  border-color: rgba(223,225,229,0);
+}
+
+.button-row {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.gbtn {
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  color: #3c4043;
+  font-size: 14px;
+  padding: 0 16px;
+  height: 36px;
+  cursor: pointer;
+}
+
+.gbtn:hover {
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  border: 1px solid #dadce0;
+}
+
+/* Advanced Search page */
+.advanced-wrap {
+  max-width: 620px;
+  margin: 40px auto;
+  padding: 0 24px;
+}
+
+.advanced-wrap h1 {
+  font-size: 24px;
+  font-weight: 400;
+  border-bottom: 1px solid #ebebeb;
+  padding-bottom: 16px;
+}
+
+.field-group {
+  margin-bottom: 24px;
+}
+
+.field-row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 18px;
+}
+
+.field-row label {
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.field-row .field-desc {
+  font-size: 12px;
+  color: #70757a;
+  margin-bottom: 6px;
+}
+
+.field-row input[type="text"] {
+  width: 100%;
+  height: 34px;
+  border: 1px solid #dfe1e5;
+  border-radius: 2px;
+  padding: 0 8px;
+  font-size: 14px;
+}
+
+.advanced-submit-row {
+  display: flex;
+  justify-content: flex-end;
+  border-top: 1px solid #ebebeb;
+  padding-top: 16px;
+}
+
+.blue-btn {
+  background-color: #4285F4;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 0 20px;
+  height: 36px;
+  cursor: pointer;
+}
+
+.blue-btn:hover {
+  box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+  background-color: #3b78e7;
+}
